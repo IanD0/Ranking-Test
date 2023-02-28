@@ -31,6 +31,7 @@ body{
   
 }
 table{
+  justify-content: center;
   display: none;
 }
 table.active{
@@ -222,11 +223,11 @@ td {
 
 
   h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 2rem;
     left: -2rem;
-    top: 1rem;   
-    
+    top: 1rem;
+    text-align: left;
     
   }
   
