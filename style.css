@@ -223,7 +223,7 @@ td {
 
 
   h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 2rem;
     left: -2rem;
     top: 1rem;
@@ -315,7 +315,7 @@ td {
   }
   
   tbody {
-    height: 600px;
+    height: 300px;
     border-radius: 1rem;
   }
 
