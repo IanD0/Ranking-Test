@@ -1,332 +1,127 @@
-* {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" type="image/png" href="PNG/LOGO-PNG.png">
+  <meta name="apple-mobile-web-app-title" content="CodePen">
+  <link class="icone" rel="shortcut icon" type="image/x-icon" href="PNG/logo-site-ranking.png">
+  <link rel="mask-icon" type="image/x-icon" href="https://imgur.com/a/QrTg2gi" color="#111">
+  <link rel="stylesheet" href="style.css">
   
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body{
- min-width: 100vw;
- min-height: 100vh;
+  <title>Ranking - Atlântico Promotora</title>
+  <style>
+    /* Adicione estilos personalizados aqui */
+  </style>
+</head>
+<body translate="no">
 
+  <div class="leaderboard">
+    <header>
+      <h1>Ranking Atlântico</h1>
+      <img src="PNG/LOGO-PNG.png" alt="" srcset="">
+      <nav>
+      
+        <a href="#" class="active" id="comissoes-link">Comissões</a>
+        <a href="#" id="total-link">Total</a> 
+        <a href="https://www.atlanticopromotora.com/" class="Site">Site</a>
 
-  background-image: linear-gradient(to left,#00a4dd, #37ccfd, #2ca9d3, #77ebff);
-  background-size: 500% 100%;
-  animation: degrade-animado 6s infinite ease alternate;
-}
-
-@keyframes degrade-animado{
-  0% {
-      background-position-x: 0%;
-  }
-  100%{
-      background-position-x: 100%;
-  }
-}
-.leaderboard {
-  max-width: 0;
-  margin: 0 auto;
-  border-radius: 1rem;
-  box-shadow: 2px 2px 16px 1px #f4f4f5cb;
-  font-family: 'Montserrat', sans-serif;
+        
+      </nav>
+    </header>
+    <table id="table-comissoes" class="comissao active">
+        <thead>
+          <tr>
+            <th class="rank">Rank</th>
+            <th class="nick">Nome</th>
+            <th class="sp">COMISSÃO</th>
+            <th class="kd">RESTAM</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="rank">1</td>
+            <td class="nick">Leão</td>
+            <td class="sp">R$4,000</td>
+            <td class="kd">R$1,000</td>
+          </tr>
+          <tr>
+            <td class="rank">2</td>
+            <td class="nick">Peixe</td>
+            <td class="sp">R$4,000</td>
+            <td class="kd">R$2,000</td>
+          </tr>
+          <tr>
+            <td class="rank">4</td>
+            <td class="nick">Jaguar</td>
+            <td class="sp">R$4.108</td>
+            <td class="kd">R$2,100</td>
+          </tr>
+          <tr>
+            <td class="rank">5</td>
+            <td class="nick">Raposa</td>
+            <td class="sp">R$2.200</td>
+            <td class="kd">R$2.100</td>
+          </tr>
+          <tr>
+            <td class="rank">6</td>
+            <td class="nick">Tartaruga</td>
+            <td class="sp">R$2.190</td>
+            <td class="kd">R$3,000</td>
+          </tr>
+          <tr>
+            <td class="rank">7</td>
+            <td class="nick">Gato</td>
+            <td class="sp">R$1.708</td>
   
-}
-table{
-  display: none;
-}
-table.active{
-  display: table;
-}
-
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-header {
-  background-color: #00a4dd;
-  color: white;
-  text-transform: uppercase;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-  height: 14rem;
-  position: relative;
-}
-
-
-h1 {
-  font-size: 3rem;
-  line-height: 3rem;
-  position: absolute;
-  margin-left: 3rem;
-  top: 2rem;
-}
-
-img {
-  height: 10rem;
-  position: absolute;
-  bottom: -90px;
-  right: -30px;
-}
-
-nav {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  font-size: 1.3rem;
+            <td class="kd">R$2.900</td>
+          </tr>
+          <tr>
+            <td class="rank">8</td>
+            <td class="nick">Lobo</td>
+            <td class="sp">R$1.208</td>
+            <td class="kd">R$2.900</td>
+          </tr>
+        </tbody>
+      </table>
+     
+      <table id="table-total" class="total">
+        <thead>
+          <tr>
+            <th class="rank">Data</th>
+            <th class="nick">Total Produzido</th>
+            <th class="sp">FALTAM</th>
+            <th class="kd">Meta</td>
+          </tr>
+        </thead class="active-total">
+        <tbody>
+          <tr>
+            <td class="rank">07/03</td>
+            <td class="nick">R$16.006,60</td>
+            <td class="sp">R$4,000</td>
+            <td class="kd">R$2.900</td>
   
-}
-
-nav a {
-  padding-top: 1rem;
-  padding-bottom: 0.75rem;
-  display: inline-block;
-  font-weight: bold;
-}
-
-nav a.active {
-  display: inline-flex;
-  border-bottom: 4px solid #f0a900;
-}
-
-nav a:first-child {
-  margin-left: 2rem;
-}
-
-nav a+a {
-    padding: 1rem;
-}
-
-table {
-  
-  background-color: #16181e;
-  color: #999;
-  width: auto;
-  border-collapse: collapse;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  height: 14rem;
- 
-  
-}
-table.active{
-  display: table;
-
-}
-
-table.total tbody{
-
-  height: 50px;
-  max-width: 300px;
-  
-}
-
-thead {
- 
-  font-size: 1rem;
-  color: #555;
-  text-transform: uppercase;
-}
-
-tbody .nick {
-  color: white;
-  font-weight: bold;
-  font-size: 1.3rem;
-}
-
-tbody tr:nth-child(2n) {
-  background-color: #1f232c;
-}
-
-.nick {
-  text-align: left;
-
-}
-
-.rank,
-.sp,
-.kd {
-  font-size: 1.3rem;
-  text-align: center;
+          </tr>
+          
+        </tbody>
+      </table>
+</div>
   
   
-}
-
-
-.rank {
-  padding-left: 1rem;
-}
-
-.sp,
-.kd {
-  width: 14ch;
-  
-}
-
-th {
-  padding: 1.5rem 1rem 0.5rem;
-}
-
-td {
-  padding: 1rem 1rem;
-}
-
-@media screen and (max-width: 800px) {
-  .leaderboard {
-    display: block;
-    align-items: center;
-    max-width: 100%;
-    margin: 8rem auto;
-    margin-left: 1rem;
-    scale: 0.7;
-
-  }
- 
-
-  table {
-    max-width: 100%;
-    margin: 0 auto;
-    display: none;
-    background-color: #16181e;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    height: auto;
-  }
-  table#table-comissoes.comissao.active {
-    justify-items: center;
-    height: 4rem;
-  }
-
-  table.active {
-    display: table;
-  }
-  table.total{
-    justify-content: center;
-  
-  
-  }
-  tbody td {
-    padding: 0.5rem 0.5rem;
-
-  }
-  
-  header {
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px -12px 20px 0px #ffffff63;
-    height: 8rem;
-    
-  }
-
+  <script src="java.js"></script>
   
 
 
-  h1 {
-    font-size: 2rem;
-    line-height: 2rem;
-    left: -2rem;
-    top: 1rem;   
-    
-    
-  }
   
-
-  nav a.active {
-    display: inline-flex;
-    border-bottom: 4px solid #f0a900;
-  }
-  nav a:first-child {
-    margin-left: 1rem ;
-  }
-
-  img {
-    height: 15rem;
-    bottom: -3rem;
-    left: 176px;
-  }
-  
-  tbody{
-    height: auto;
-  }
-  tr {
-    font-size: 0.8rem;
-    height: 0rem;
-  }
-  .rank{
-    font-size: 0.8rem;
-  }
-  .sp {
-    font-size: 0.8rem;
-  }
-  .kd {
-    font-size: 0.8rem;
-  }
-
-  th {
-    padding: 1rem 0.5rem 0.5rem;
-  }
-  tbody .nick {
-    font-size: 0.8rem;
-  }
- 
-
-  td {
-    padding: 0.5rem 0.5rem;
-    max-width: 100px;
-  }
-  nav {
-    background: linear-gradient(to bottom, transparent, transparent 10%, rgba(22, 22, 22, 0.5));
-    font-size: 0.9rem;
-    padding-top: 10px;
-  }
-
-  .modal{
-    margin: 0 -38px;
-  }
-  .modal_content{
-    box-shadow: 2px 2px 16px 1px #44abffc9;
-  }
-}
-
-/* Regras de estilo para telas maiores ou iguais a 800px de largura */
-
-@media (min-width: 768px) {
-
-  .leaderboard {
-    margin: 4rem auto;
-    max-width: 600px;
-
-  }
-  
-  h1 {
-    font-size: 4rem;
-    line-height: 4rem;
-    margin-left: 2rem;
-    text-align: left;
-  }
-  
-  img {
-    height: 14rem;
-    right: -3rem;
-    bottom: 3rem;
-  }
-
-  }
-  
-  tbody {
-    height: 600px;
-    border-radius: 1rem;
-  }
-
-  th {
-    padding: 1.5rem 1rem 0.5rem;
-  }
-
-  td {
-    padding: 1rem 1rem;
-  }
-  
+    </script>
 
 
-   
- 
+
+
+
+
+
+
+</body>
+
+</html>
