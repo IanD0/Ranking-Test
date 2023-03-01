@@ -1,17 +1,15 @@
 * {
-  border: none;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  background-image: linear-gradient(
-    to left,
-    #00a4dd,
-    #37ccfd,
-    #2ca9d3,
-    #77ebff
-  );
+  width: 100%;
+  max-inline-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to left,#00a4dd, #37ccfd, #2ca9d3, #77ebff);
   background-size: 500% 100%;
   animation: degrade-animado 6s infinite ease alternate;
 }
@@ -157,14 +155,10 @@ td {
   padding: 1rem 1rem;
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .leaderboard {
-    display: block;
-    align-items: center;
-    max-width: 100%;
-    margin: 8rem auto;
-    margin-left: 1rem;
-    scale: 0.9;
+    max-inline-size: 90%;
+    margin: 8rem;
   }
 
   table {
@@ -194,10 +188,11 @@ td {
   }
 
   header {
-    box-shadow: 0px -12px 20px 0px #ffffff63;
-    height: 9rem;
-    max-width: 800px;
-    min-width: auto;
+    max-width: 400px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
   }
 
   h1 {
