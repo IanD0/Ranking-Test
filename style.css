@@ -23,8 +23,8 @@ body {
   }
 }
 .leaderboard {
-  max-width: 0;
-  margin: 0 auto;
+  margin: 4rem auto;
+  max-width: 600px;
   border-radius: 1rem;
   box-shadow: 2px 2px 16px 1px #f4f4f5cb;
   font-family: "Montserrat", sans-serif;
@@ -47,7 +47,7 @@ header {
   text-transform: uppercase;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-  height: 14rem;
+  height: 9rem;
   position: relative;
 }
 
@@ -57,13 +57,13 @@ h1 {
   position: absolute;
   margin-left: 3rem;
   top: 2rem;
+  
 }
 
 img {
-  height: 10rem;
-  position: absolute;
-  bottom: -90px;
-  right: -30px;
+  height: 16rem;
+  bottom: -3rem;
+  left: 190px;
 }
 
 nav {
@@ -157,8 +157,11 @@ td {
 
 @media (max-width: 800px) {
   .leaderboard {
+   
+  
+    margin: 8rem auto;
+   
     max-inline-size: 90%;
-    margin: 8rem;
   }
 
   table {
@@ -211,9 +214,10 @@ td {
   }
 
   img {
-    height: 15rem;
-    bottom: -3rem;
-    left: 166px;
+    position: absolute;
+    height: 16rem;
+    bottom: 4rem;
+    left: 190px;
   }
 
   tbody {
@@ -254,39 +258,5 @@ td {
     font-size: 0.9rem;
     padding-top: 10px;
   }
-}
 
-/* Regras de estilo para telas maiores ou iguais a 800px de largura */
 
-@media (min-width: 768px) {
-  .leaderboard {
-    margin: 4rem auto;
-    max-width: 600px;
-  }
-
-  h1 {
-    font-size: 4rem;
-    line-height: 4rem;
-    margin-left: 2rem;
-    text-align: left;
-  }
-
-  img {
-    height: 14rem;
-    right: -3rem;
-    bottom: 3rem;
-  }
-}
-
-tbody {
-  height: 300px;
-  border-radius: 1rem;
-}
-
-th {
-  padding: 1.5rem 1rem 0.5rem;
-}
-
-td {
-  padding: 1rem 1rem;
-}
