@@ -66,10 +66,10 @@ h1 {
 }
 
 img {
-  position: absolute;
+  padding: 9px 0px 0px 257px;
   height: 6rem;
-  margin-left: 16rem;
-  margin-top: 1rem;
+   margin-left: -1rem;
+  margin-top: 0rem;
 }
 
 nav {
@@ -217,9 +217,7 @@ nav a:first-child {
 }
 
 img {
-    height: 6rem;
-    margin-left: 15rem;
-    margin-top: 1rem;
+  padding: 9px 0px 0px 257px;
 }
 
 tbody {
@@ -259,4 +257,14 @@ nav {
   );
   font-size: 0.9rem;
   padding-top: 10px;
+}
+@media (min-width: 768px){
+  img {
+    padding: 9px 0px 0px 275px;
+    height: 7.5rem;
+    margin-left: -1rem;
+    margin-top: 0rem;
+  }
+
+  
 }
