@@ -177,8 +177,6 @@ td {
 
   table.active {
     display: table;
-    max-width: 1200px;
-    min-width: 300px;
   }
   table.total {
     justify-content: center;
@@ -189,6 +187,7 @@ td {
 
   header {
     max-width: 400px;
+    height: 8rem;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -214,7 +213,7 @@ td {
   img {
     height: 15rem;
     bottom: -3rem;
-    left: 176px;
+    left: 166px;
   }
 
   tbody {
