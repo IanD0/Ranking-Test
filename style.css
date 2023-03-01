@@ -216,7 +216,7 @@ td {
   img {
     position: absolute;
     height: 16rem;
-    bottom: 4rem;
+    bottom: -4rem;
     left: 190px;
   }
 
