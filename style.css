@@ -66,6 +66,7 @@ h1 {
 }
 
 img {
+  position: absolute;
   height: 6rem;
   margin-left: 16rem;
   margin-top: 1rem;
@@ -216,9 +217,9 @@ nav a:first-child {
 }
 
 img {
-  height: 6rem;
-  margin-left: 14rem;
-  margin-top: 1rem;
+    height: 6rem;
+    margin-left: 15rem;
+    margin-top: 1rem;
 }
 
 tbody {
