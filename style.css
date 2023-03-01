@@ -11,13 +11,13 @@ body {
   justify-content: center;
   background-image: linear-gradient(
     to left,
-    #00a4dd,
-    #37ccfd,
-    #2ca9d3,
+    #080808,
+    #28718a,
+    #19bcf3,
     #77ebff
   );
   background-size: 500% 100%;
-  animation: degrade-animado 6s infinite ease alternate;
+  animation: degrade-animado 10s infinite ease alternate;
 }
 
 @keyframes degrade-animado {
@@ -32,7 +32,7 @@ body {
   margin: 4rem auto;
   max-width: 600px;
   border-radius: 1rem;
-  box-shadow: 2px 2px 16px 1px #f4f4f5cb;
+  box-shadow: 2px 2px 16px 1px #0202025d;
   font-family: "Montserrat", sans-serif;
 }
 table {
