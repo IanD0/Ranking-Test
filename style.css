@@ -177,7 +177,7 @@ td {
   .leaderboard {
     max-width: 95%;
     margin: 1rem auto;
-    scale: 1;
+    scale: 0.95;
   }
 
   table {
