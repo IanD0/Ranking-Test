@@ -29,11 +29,12 @@ body {
   }
 }
 .leaderboard {
-  margin: 4rem auto;
+  margin: 16rem auto;
   max-width: 600px;
   border-radius: 1rem;
   box-shadow: 2px 2px 16px 1px #0202025d;
   font-family: "Montserrat", sans-serif;
+  scale: 2;
 }
 table {
   display: none;
@@ -174,6 +175,7 @@ td {
   .leaderboard {
     max-width: 90%;
     margin: 5rem auto;
+    scale: none;
   }
 
   table {
@@ -210,11 +212,11 @@ td {
 }
 
 h1 {
-  font-size: 2.3rem;
-  line-height: 2.4rem;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
   left: -2rem;
   top: 1rem;
-  text-align: left;
+  text-align: justify;
 }
 
 nav a.active {
