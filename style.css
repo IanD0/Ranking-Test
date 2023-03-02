@@ -120,12 +120,14 @@ table {
 }
 table.active {
   display: table;
+  height: 3rem;
 }
 
 table.total tbody {
   height: 50px;
   max-width: 300px;
 }
+
 
 thead {
   font-size: 1rem;
@@ -185,7 +187,7 @@ td {
     background-color: #16181e;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    height: auto;
+    height: 4rem;
   }
   table#table-comissoes.comissao.active {
     justify-items: center;
