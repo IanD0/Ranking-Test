@@ -175,7 +175,7 @@ td {
 
 @media (max-width: 800px) {
   .leaderboard {
-    max-width: 90%;
+    max-width: 95%;
     margin: 5rem auto;
     scale: none;
   }
