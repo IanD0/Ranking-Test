@@ -29,12 +29,12 @@ body {
   }
 }
 .leaderboard {
-  margin: 16rem auto;
+  margin: 4rem auto;
   max-width: 600px;
   border-radius: 1rem;
   box-shadow: 2px 2px 16px 1px #0202025d;
   font-family: "Montserrat", sans-serif;
-  scale: 2;
+  scale: 1.1;
 }
 table {
   display: none;
@@ -49,7 +49,7 @@ a {
 }
 
 header {
-  background-color: #00a4dd;
+ 
   color: white;
   text-transform: uppercase;
   border-top-left-radius: 1rem;
@@ -271,6 +271,35 @@ nav {
   font-size: 0.9rem;
   padding-top: 10px;
 }
+table td:last-child {
+  width: 50px;
+}
+.dialogo {
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: none;
+}
+
+table td:last-child button {
+  width: 30px;
+  height: 30px;
+  background-color: #505050;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+table td:last-child button:hover {
+  background-color: #00a4dd;
+}
+
+
+
 @media (min-width: 768px){
   img {
     padding: 9px 0px 0px 275px;
